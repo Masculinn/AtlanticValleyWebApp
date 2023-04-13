@@ -1,0 +1,74 @@
+ @font-face {
+  font-family: 'Vogue';
+  src: url('./extra_styles/Vogue.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./extra_styles/Manrope.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Marked';
+  src: url('./extra_styles/Marked.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'def';
+  src: url('./extra_styles/default.ttf') format('truetype');
+}
+
+body {
+  background-image: url('extra_styles/main-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: white;
+  font-family: 'Vogue', sans-serif;
+}
+
+h1, #vogue {
+  font-family: 'Marked', sans-serif;
+}
+
+#section_font {
+  font-family: 'Manrope', sans-serif;
+}
+
+#material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#try {
+  background-size: 50%;
+}
+#def {
+  font-family: 'def', sans-serif;
+}
+
+#marquee1 {
+  animation: mq1 15s linear infinite;
+}
+
+#marquee2 {
+  animation: mq2 15s linear infinite; 
+}
+
+@keyframes mq1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes mq2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }  
+}
+ 
